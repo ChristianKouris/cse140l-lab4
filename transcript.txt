@@ -1,0 +1,160 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do top_level_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/Christian/Desktop/lab4 {C:/Users/Christian/Desktop/lab4/lfsr6.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:07:01 on Jun 12,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Christian/Desktop/lab4" C:/Users/Christian/Desktop/lab4/lfsr6.sv 
+# -- Compiling module lfsr6
+# 
+# Top level modules:
+# 	lfsr6
+# End time: 19:07:01 on Jun 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Christian/Desktop/lab4 {C:/Users/Christian/Desktop/lab4/dat_mem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:07:01 on Jun 12,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Christian/Desktop/lab4" C:/Users/Christian/Desktop/lab4/dat_mem.sv 
+# -- Compiling module dat_mem
+# 
+# Top level modules:
+# 	dat_mem
+# End time: 19:07:01 on Jun 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Christian/Desktop/lab4 {C:/Users/Christian/Desktop/lab4/top_level.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:07:01 on Jun 12,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Christian/Desktop/lab4" C:/Users/Christian/Desktop/lab4/top_level.sv 
+# -- Compiling module top_level
+# 
+# Top level modules:
+# 	top_level
+# End time: 19:07:01 on Jun 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/Christian/Desktop/lab4/dat_mem.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:07:16 on Jun 12,2020
+# vlog -reportprogress 300 -work work C:/Users/Christian/Desktop/lab4/dat_mem.sv 
+# -- Compiling module dat_mem
+# 
+# Top level modules:
+# 	dat_mem
+# End time: 19:07:16 on Jun 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Christian/Desktop/lab4/Lab4_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:07:16 on Jun 12,2020
+# vlog -reportprogress 300 -work work C:/Users/Christian/Desktop/lab4/Lab4_tb.sv 
+# -- Compiling module Lab4_tb
+# 
+# Top level modules:
+# 	Lab4_tb
+# End time: 19:07:16 on Jun 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Christian/Desktop/lab4/lfsr6.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:07:16 on Jun 12,2020
+# vlog -reportprogress 300 -work work C:/Users/Christian/Desktop/lab4/lfsr6.sv 
+# -- Compiling module lfsr6
+# 
+# Top level modules:
+# 	lfsr6
+# End time: 19:07:16 on Jun 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Christian/Desktop/lab4/top_level.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:07:16 on Jun 12,2020
+# vlog -reportprogress 300 -work work C:/Users/Christian/Desktop/lab4/top_level.sv 
+# -- Compiling module top_level
+# 
+# Top level modules:
+# 	top_level
+# End time: 19:07:16 on Jun 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.Lab4_tb
+# vsim work.Lab4_tb 
+# Start time: 19:08:16 on Jun 12,2020
+# Loading sv_std.std
+# Loading work.Lab4_tb
+# Loading work.top_level
+# Loading work.dat_mem
+# Loading work.lfsr6
+add wave sim:/Lab4_tb/dut/*
+run -all
+# Mr_Watson_come_here_I_want_to_see_you
+#           0 bench msg: _ 5f 5e ^ dut msg: 5e    very nice!
+#           1 bench msg: _ 5f 5d ] dut msg: 5d    very nice!
+#           2 bench msg: _ 5f 5b [ dut msg: 5b    very nice!
+#           3 bench msg: _ 5f 57 W dut msg: 57    very nice!
+#           4 bench msg: _ 5f 4f O dut msg: 4f    very nice!
+#           5 bench msg: _ 5f 7e ~ dut msg: 7e    very nice!
+#           6 bench msg: _ 5f 5c \ dut msg: 5c    very nice!
+#           7 bench msg: _ 5f 59 Y dut msg: 59    very nice!
+#           8 bench msg: _ 5f 53 S dut msg: 53    very nice!
+#           9 bench msg: M 4d 55 U dut msg: 55    very nice!
+#          10 bench msg: r 72 43 C dut msg: 43    very nice!
+#          11 bench msg: _ 5f 7d } dut msg: 7d    very nice!
+#          12 bench msg: W 57 52 R dut msg: 52    very nice!
+#          13 bench msg: a 61 6b k dut msg: 6b    very nice!
+#          14 bench msg: t 74 60 ` dut msg: 60    very nice!
+#          15 bench msg: s 73 5a Z dut msg: 5a    very nice!
+#          16 bench msg: o 6f 7c | dut msg: 7c    very nice!
+#          17 bench msg: n 6e 49 I dut msg: 49    very nice!
+#          18 bench msg: _ 5f 50 P dut msg: 50    very nice!
+#          19 bench msg: c 63 7d } dut msg: 7d    very nice!
+#          20 bench msg: o 6f 52 R dut msg: 52    very nice!
+#          21 bench msg: m 6d 57 W dut msg: 57    very nice!
+#          22 bench msg: e 65 51 Q dut msg: 51    very nice!
+#          23 bench msg: _ 5f 77 w dut msg: 77    very nice!
+#          24 bench msg: h 68 79 y dut msg: 79    very nice!
+#          25 bench msg: e 65 46 F dut msg: 46    very nice!
+#          26 bench msg: r 72 75 u dut msg: 75    very nice!
+#          27 bench msg: e 65 6b k dut msg: 6b    very nice!
+#          28 bench msg: _ 5f 43 C dut msg: 43    very nice!
+#          29 bench msg: I 49 70 p dut msg: 70    very nice!
+#          30 bench msg: _ 5f 6d m dut msg: 6d    very nice!
+#          31 bench msg: w 77 53 S dut msg: 53    very nice!
+#          32 bench msg: a 61 68 h dut msg: 68    very nice!
+#          33 bench msg: n 6e 7c | dut msg: 7c    very nice!
+#          34 bench msg: t 74 51 Q dut msg: 51    very nice!
+#          35 bench msg: _ 5f 54 T dut msg: 54    very nice!
+#          36 bench msg: t 74 62 b dut msg: 62    very nice!
+#          37 bench msg: o 6f 42 B dut msg: 42    very nice!
+#          38 bench msg: _ 5f 44 D dut msg: 44    very nice!
+#          39 bench msg: s 73 44 D dut msg: 44    very nice!
+#          40 bench msg: e 65 4b K dut msg: 4b    very nice!
+#          41 bench msg: e 65 78 x dut msg: 78    very nice!
+#          42 bench msg: _ 5f 64 d dut msg: 64    very nice!
+#          43 bench msg: y 79 4f O dut msg: 4f    very nice!
+#          44 bench msg: o 6f 43 C dut msg: 43    very nice!
+#          45 bench msg: u 75 6c l dut msg: 6c    very nice!
+#          46 bench msg: _ 5f 6c l dut msg: 6c    very nice!
+#          47 bench msg: _ 5f 79 y dut msg: 79    very nice!
+#          48 bench msg: _ 5f 52 R dut msg: 52    very nice!
+#          49 bench msg: _ 5f 45 E dut msg: 45    very nice!
+#          50 bench msg: _ 5f 6a j dut msg: 6a    very nice!
+#          51 bench msg: _ 5f 75 u dut msg: 75    very nice!
+#          52 bench msg: _ 5f 4a J dut msg: 4a    very nice!
+#          53 bench msg: _ 5f 74 t dut msg: 74    very nice!
+#          54 bench msg: _ 5f 48 H dut msg: 48    very nice!
+#          55 bench msg: _ 5f 70 p dut msg: 70    very nice!
+#          56 bench msg: _ 5f 40 @ dut msg: 40    very nice!
+#          57 bench msg: _ 5f 60 ` dut msg: 60    very nice!
+#          58 bench msg: _ 5f 61 a dut msg: 61    very nice!
+#          59 bench msg: _ 5f 63 c dut msg: 63    very nice!
+#          60 bench msg: _ 5f 67 g dut msg: 67    very nice!
+# original message  = _________Mr_Watson_come_here_I_want_to_see_you________________
+# encrypted message = ^][WO~\YSUC}Rk`Z|IP}RWQwyFukCpmSh|QTbBDDKxdOCllyREjuJtHp@`acg 
+# ** Note: $stop    : C:/Users/Christian/Desktop/lab4/Lab4_tb.sv(111)
+#    Time: 695 ns  Iteration: 3  Instance: /Lab4_tb
+# Break in Module Lab4_tb at C:/Users/Christian/Desktop/lab4/Lab4_tb.sv line 111
